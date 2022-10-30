@@ -1,0 +1,97 @@
+.attribution { font-size: 11px; text-align: center; padding: 12px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-left:3vw;
+    margin-right: 3vw;
+    padding: 1.5rem;
+    background-color: hsl(257, 40%, 49%);
+}
+picture{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.logo{
+    width: 30vw;
+    margin-bottom: 3.5rem;
+}
+.pic{
+    max-width: 90vw;
+}
+main{
+    color: white;
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+}
+main h2{
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+main p{
+    font-family: 'open sans',sans-serif;
+    padding: 8px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    line-height: 1.5;
+}
+main button{
+    padding: 15px;
+    width: 60%;
+    border-radius: 48px;
+    border: solid 2px;
+    color: hsl(257, 40%, 49%);
+}
+main button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    border: none;
+}
+
+/* media:desktop code */
+@media only screen and (min-width:769px){
+    .logo{
+        max-width: 18vw;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 96px;
+    }
+    .pic{
+        grid-area: 1/1/1/1;
+        max-width: 120%;
+    }
+    main{
+        grid-area: 1/2/1/2;
+        text-align: left;
+        padding-left: 24px;
+    }
+    main p{
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    main h2{
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    main button{
+        width: 40%;
+    }
+    footer{
+        padding: 3rem;
+    }
+}
