@@ -36,6 +36,8 @@ main{
     text-align: center;
     font-family: "Poppins",sans-serif;
     font-weight: 400;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 main h2{
     margin-left: 12vw;
@@ -60,36 +62,45 @@ main button:hover{
     color: white;
     border: none;
 }
+.icons{
+    color: white;
+    font-size: 24px;
+    word-spacing: 10px;
+    align-self: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 /* media:desktop code */
 @media only screen and (min-width:769px){
     .logo{
-        max-width: 18vw;
+        max-width: 15vw;
     }
     .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 96px;
+        display: flex;
+        flex-direction: row;
     }
     .pic{
-        grid-area: 1/1/1/1;
-        max-width: 120%;
+        max-width: 100%;
     }
     main{
-        grid-area: 1/2/1/2;
         text-align: left;
-        padding-left: 24px;
+        padding: 36px;
     }
     main p{
         margin-left: 0vw;
         margin-right: 0vw;
     }
     main h2{
+        font-size: 2rem;
         margin-left: 0vw;
         margin-right: 0vw;
     }
     main button{
-        width: 40%;
+        width: 30%;
+    }
+    .icons{
+        align-self:end;
     }
     footer{
         padding: 3rem;
