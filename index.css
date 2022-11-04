@@ -1,5 +1,8 @@
 .attribution { font-size: 11px; text-align: center; padding: 12px; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: white; }
+
+@import url(https://fonts.google.com/specimen/Poppins);
+@import url(https://fonts.google.com/specimen/Open+Sans);
 
 *{
     margin: 0px;
@@ -9,20 +12,10 @@ body{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin-top: 2vh;
-    margin-left:3vw;
-    margin-right: 3vw;
+    background: url(images/bg-mobile.svg) no-repeat top  hsl(257, 40%, 49%);
+    background-size: 100%;
+    margin: 2vh 3vw 0vh 3vw;
     padding: 1.5rem;
-    background-color: hsl(257, 40%, 49%);
-}
-picture{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
 }
 .logo{
     width: 30vw;
@@ -36,18 +29,16 @@ main{
     text-align: center;
     font-family: "Poppins",sans-serif;
     font-weight: 400;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 0px;
 }
 main h2{
-    margin-left: 12vw;
-    margin-right: 12vw;
+    margin: 0vh 12vw;
 }
 main p{
     font-family: 'open sans',sans-serif;
+    font-weight: 300;
     padding: 8px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin: 1rem 10vw;
     line-height: 1.5;
 }
 main button{
@@ -67,12 +58,14 @@ main button:hover{
     font-size: 24px;
     word-spacing: 10px;
     align-self: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0px;
 }
 
 /* media:desktop code */
 @media only screen and (min-width:769px){
+    body{
+        background: url(images/bg-desktop.svg) no-repeat top hsl(257, 40%, 49%);
+    }
     .logo{
         max-width: 15vw;
     }
@@ -80,7 +73,7 @@ main button:hover{
         display: flex;
         flex-direction: row;
     }
-    .pic{
+    figure{
         max-width: 100%;
     }
     main{
@@ -93,6 +86,7 @@ main button:hover{
     }
     main h2{
         font-size: 2rem;
+        line-height: 1.5;
         margin-left: 0vw;
         margin-right: 0vw;
     }
@@ -103,6 +97,6 @@ main button:hover{
         align-self:end;
     }
     footer{
-        padding: 3rem;
+        padding: 1rem;
     }
 }
